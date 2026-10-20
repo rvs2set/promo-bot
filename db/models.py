@@ -1,4 +1,3 @@
-cat << 'EOF' > db/models.py
 import datetime
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import Integer, String, BigInteger, DateTime, Boolean, ForeignKey
@@ -48,4 +47,3 @@ class DailyActivity(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[int] = mapped_column(BigInteger)
     date: Mapped[str] = mapped_column(String)
-EOF

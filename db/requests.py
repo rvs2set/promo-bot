@@ -1,4 +1,3 @@
-cat << 'EOF' > db/requests.py
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 from sqlalchemy import select
 from db.models import Base, Partner, Promocode
@@ -29,4 +28,3 @@ async def init_db():
             ])
             await session.commit()
     print("База данных успешно инициализирована через модуль db!")
-EOF

@@ -13,4 +13,4 @@
 ## Стек технологий
 - Python 3.11+
 - aiogram 3.x
-- SQLAlchemy / SQLite (PostgreSQL)
+- SQLite 
